@@ -1,0 +1,14 @@
+X=tuple(range(0,200,5))
+Y=tuple(range(0,200,7))
+setX=set(X)
+setY=set(Y)
+a=setX|setY
+b=setX&setY
+c=setX-setY
+d=(setX-setY)|(setY-setX)
+e=(setX-setY)&(setY-setX)
+print('a=',a)
+print('b=',b)
+print('c=',c)
+print('d=',d)
+print('e=',e)
