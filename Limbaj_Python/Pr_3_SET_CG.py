@@ -1,0 +1,16 @@
+X=set(range(0,200,5))
+Y=set(range(0,200,7))
+Z=set(range(0,200,9))
+U=set(range(0,200))
+a_stang=U-(X|Y|Z)
+a_drept=(U-X)&(U-Y)&(U-Z)
+b_stang=U-(X&Y&Z)
+b_drept=(U-X)|(U-Y)|(U-Z)
+#a)Legea1
+print('Stanga_a:',a_stang)
+print('Dreapta_a:',a_drept)
+#b)Legea2
+print('Stanga_b:',b_stang)
+print('Dreapta_b:',b_drept)
+print('a)Legea1 este:',a_stang==a_drept)
+print('b)Legea2 este:',b_stang==b_drept)
