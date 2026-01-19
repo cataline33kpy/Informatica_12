@@ -1,0 +1,6 @@
+m1 = float(input("m1 = "))
+T1 = float(input("T1 = "))
+m2 = float(input("m2 = "))
+T2 = float(input("T2 = "))
+Tf = (m1 * T1 + m2 * T2) / (m1 + m2)
+print("Tf =", Tf)

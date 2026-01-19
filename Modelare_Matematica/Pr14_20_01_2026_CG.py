@@ -1,0 +1,7 @@
+C0 = float(input("cost fix C0 = "))
+c = float(input("cost per km c = "))
+L = float(input("distanta L = "))
+dt = float(input("intarziere dt = "))
+k = float(input("penalizare k = "))
+C = C0 + c * L + k * max(0, dt)
+print("cost total =", C)
